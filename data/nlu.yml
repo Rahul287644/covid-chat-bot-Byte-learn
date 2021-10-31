@@ -183,10 +183,6 @@ nlu:
     - on wed how many corona deaths in [telangana](state)
     - 12th oct  corona deaths in [delhi](state)?
 
-
-- intent: nlu_fallback
-  examples: |
-    - how many covid deaths in india on 6th aug 2021?
 - synonym: corona
   examples: |
     - covid-19
