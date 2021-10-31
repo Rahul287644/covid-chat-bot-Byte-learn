@@ -28,6 +28,6 @@ docker run -p 8000:8000 rasa/rasa_duckling
 ### Known Bugs
 - State specific queries work properly with states telangana and delhi due to improper training data
 
-
-
+### Note
+I could have merged some actions by using another entity, but decided against it for a better readability and debugging
 
