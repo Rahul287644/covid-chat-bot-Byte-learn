@@ -1,0 +1,244 @@
+version: "2.0"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: corona info
+  steps:
+  - intent: corona_info
+  - action: utter_corona_info
+
+- story: corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+
+- story: corona prevention
+  steps:
+  - intent: corona_prevention
+  - action: utter_corona_prevention
+
+- story: corona vaccine
+  steps:
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine
+
+- story: corona symptoms
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: india deaths
+  steps:
+  - intent: corona_deaths_india
+  - action: action_deaths_india
+
+
+- story: india cases
+  steps:
+  - intent: corona_cases_india
+  - action: action_cases_india
+
+- story : state cases
+  steps:
+  - intent: corona_cases_state
+  - action: action_cases_state
+
+- story : state deaths
+  steps:
+  - intent: corona_deaths_state
+  - action: action_deaths_state
+
+- story : india cases time
+  steps:
+  - intent: corona_cases_india_time
+  - action: action_cases_india_time
+
+- story : india deaths time
+  steps:
+  - intent: corona_deaths_india_time
+  - action: action_deaths_india_time
+
+- story : state deaths time
+  steps:
+  - intent: corona_deaths_state_time
+  - action: action_deaths_state_time
+
+- story : state cases time
+  steps:
+  - intent: corona_cases_state_time
+  - action: action_cases_state_time
+
+
+- story : ask time
+  steps:
+  - intent: ask_time
+  - action: utter_time
+
+#- story: interactive_story_1
+#  steps:
+#  - intent: ask_time
+#  - action: utter_time
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-10-29T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-29T00:00:00.000-07:00'
+#  - action: utter_time
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-10-29T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-29T00:00:00.000-07:00'
+#  - action: utter_time
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-10-28T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-28T00:00:00.000-07:00'
+#  - action: utter_time
+#  - intent: nlu_fallback
+#    entities:
+#    - time: '2021-10-12T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-12T00:00:00.000-07:00'
+#  - action: utter_time
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-10-27T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-27T00:00:00.000-07:00'
+#  - action: utter_time
+#
+#  -
+#
+#- story: interactive_story_1
+#  steps:
+#  - slot_was_set:
+#    - time: '2021-10-01T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-07-20T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-07-20T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-02T00:00:00.000-07:00'
+#  - intent: corona_cases_india_time
+#    entities:
+#    - time: '2021-01-04T00:00:00.000-08:00'
+#  - slot_was_set:
+#    - time: '2021-01-04T00:00:00.000-08:00'
+#  - action: action_cases_india_time
+#
+#- story: interactive_story_1
+#  steps:
+#  - intent: corona_deaths_india_time
+#    entities:
+#    - time: '2021-08-04T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-08-04T00:00:00.000-07:00'
+#  - action: action_cases_india_time
+#
+#- story: interactive_story_2
+#  steps:
+#  - intent: corona_deaths_india_time
+#    entities:
+#    - time: '2021-08-04T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-08-04T00:00:00.000-07:00'
+#  - action: action_deaths_india_time
+#
+#- story: interactive_story_1
+#  steps:
+#  - intent: corona_deaths_india_time
+#    entities:
+#    - time: '2021-06-04T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-06-04T00:00:00.000-07:00'
+#  - action: action_deaths_india_time
+#  - intent: nlu_fallback
+#    entities:
+#    - time: '2021-08-06T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-08-06T00:00:00.000-07:00'
+#
+#- story: interactive_story_2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: corona_cases_india_time
+#    entities:
+#    - time: '2021-07-04T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-07-04T00:00:00.000-07:00'
+#  - action: action_cases_india_time
+#  - intent: corona_cases_india_time
+#    entities:
+#    - time: '2021-07-04T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-07-04T00:00:00.000-07:00'
+#  - action: action_cases_india_time
+#  - intent: affirm
+#
+#- story: interactive_story_3
+#  steps:
+#  - intent: corona_cases_india_time
+#    entities:
+#    - time: '2021-07-04T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-07-04T00:00:00.000-07:00'
+#  - action: action_cases_india_time
+#  - intent: corona_cases_india_time
+#    entities:
+#    - time: '2021-06-03T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-06-03T00:00:00.000-07:00'
+#  - action: action_cases_india_time
+#  - intent: corona_deaths_india_time
+#    entities:
+#    - time: '2021-10-03T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-03T00:00:00.000-07:00'
+#  - action: action_deaths_india_time
+#  - intent: corona_cases_state
+#    entities:
+#    - state: Karnataka
+#  - slot_was_set:
+#    - state: Karnataka
+#  - action: action_cases_state
+#  - intent: corona_cases_state
+#    entities:
+#    - state: telangana
+#  - slot_was_set:
+#    - state: telangana
+#  - action: action_cases_state
+#  - intent: corona_cases_state
+#    entities:
+#    - state: delhi
+#  - slot_was_set:
+#    - state: delhi
+#  - action: action_cases_state
+#
+#- story: interactive_story_1
+#  steps:
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-10-30T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-10-30T00:00:00.000-07:00'
+#  - action: utter_time
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-10-27T00:00:00.000-07:00'
+#    - time: '2027-10-21T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2027-10-21T00:00:00.000-07:00'
+#  - action: utter_time
+#  - intent: ask_time
+#    entities:
+#    - time: '2021-11-01T00:00:00.000-07:00'
+#  - slot_was_set:
+#    - time: '2021-11-01T00:00:00.000-07:00'
+#  - action: utter_time

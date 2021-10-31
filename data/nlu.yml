@@ -1,0 +1,193 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: corona_info
+  examples: |
+    - what is corona virus ?
+    - where did corona virus come from ?
+    - what is covid 19 ?
+    - what caused covid 19 ?
+    - information about corona virus
+    - information about the virus
+    - tell me about corona virus
+    - what is corona ?
+- intent: corona_spread
+  examples: |
+    - how does corona spread ?
+    - how does covid spread?
+    - covid spread?
+    - covid 19 spread
+    - how does the virus spread?
+- intent: corona_symptoms
+  examples: |
+    - what are all the symptoms of corona virus?
+    - what are the symptoms for covid ?
+    - how to know if you are effected by the corona virus?
+    - what are the effects of covid ?
+    - symptoms of covid?
+    - how to know if a person has been infected by the virus?
+- intent: corona_vaccine
+  examples: |
+    - is there a vaccine for corona virus?
+    - what vaccine should i get for the corona virus?
+    - what different kinds of vaccines are avaliable for covid prevention?
+    - is there a vaccine for covid ?
+    - how many vaccines are there for covid?
+- intent: corona_prevention
+  examples: |
+    - how to prevent corona from effecting me ?
+    - how can i prevent covid ?
+    - how can i prevent the corona virus?
+    - how to prevent corona?
+    - how to not get infected by the virus?
+    - how to not get covid 19?
+- intent: corona_deaths_india
+  examples: |
+    - how many deaths in india due to corona?
+    - number of casualities india because of corona?
+    - how many people died due to corona ?
+    - no of corona deaths india
+    - current death count india
+    - number of deaths in india
+- intent: corona_cases_india
+  examples: |
+    - how many cases in india due to corona?
+    - number of cases india because of corona?
+    - how many people got corona ?
+    - no of corona cases india
+    - current cases count india
+- intent: corona_deaths_state
+  examples: |
+    - how many deaths in [Telangana](state) due to corona?
+    - number of casualities in [Telangana](state) because of corona?
+    - how many people died in [Telangana](state) due to corona ?
+    - no of corona deaths [Telangana](state)
+    - current death count [Telangana](state)
+- intent: corona_cases_state
+  examples: |
+    - how many cases in [Telangana](state) due to corona?
+    - how many cases in [delhi](state) due to corona?
+    - number of cases [Telangana](state) because of corona?
+    - how many people got corona in [delhi](state) ?
+    - current cases count [Telangana](state)
+    - cases in [delhi](state)
+    - how many cases were recorded in [delhi](state)?
+    - how many covid cases in [Karnataka](state)?
+    - how many corona cases in [telangana](state)
+    - how many active corona cases in [delhi](state)?
+- intent: ask_time
+  examples: |
+    - what time is it?
+    - what day is it today?
+    - what is today?
+    - what was yesterday?
+    - what is the time?
+    - what day was yesterday?
+    - what is day before yesterday?
+    - date on 12th oct 2021
+    - what is the date today?
+    - date on 27-10-21?
+    - what time is it monday?
+- intent: corona_cases_india_time
+  examples: |
+    - how many cases in india due to corona on 7th july 2021?
+    - number of cases india were recorded on oct 7th 2021 because of corona ?
+    - how many people got corona on sun last week?
+    - no of corona cases india recorded during 3rd of oct 2021
+    - current cases count india when on 1st jul 2021
+    - how many cases in india on 1st oct 2021
+    - how many cases are recorded in india on 20 july 2021?
+    - how many cases due to covid in india on 20th july 2021?
+    - how many covid cases in india on 2nd oct 2021?
+    - how many corona cases in india on 4th jan 2021
+    - number of cases in india on 4th july 2021?
+    - how many number of active cases in india on 4th july 2021?
+    - number of cases in india on 3rd june 2021
+- intent: corona_deaths_india_time
+  examples: |
+    - how many deaths in india due to covid on 4 july 2020?
+    - how many people died in india because of corona on monday?
+    - number of people who died in india due to corona on 12th jul 2021?
+    - current death count on friday in india
+    - deaths in  india on monday
+    - number of deaths in india due to corona on 4th august 2021
+    - how many deaths in india because of covid on 4th june 2021?
+    - death count in india on 3rd oct 2021
+- intent: corona_cases_state_time
+  examples: |
+    - how many cases in [Telangana](state) due to corona on monday?
+    - how many cases in [delhi](state) due to corona on 12th oct 2021?
+    - on oct 2nd 2021 number of cases [Telangana](state) because of corona?
+    - how many people got corona in [delhi](state) on 12th july ?
+    - cases count [Telangana](state) on 23-7-2021
+    - cases in [delhi](state) on 30th october
+    - how many cases were recorded on monday last week in [delhi](state)?
+    - how many covid cases on tue in [Karnataka](state)?
+    - on wed how many corona cases in [telangana](state)
+    - 12th oct  active corona cases in [delhi](state)?
+
+- intent: corona_deaths_state_time
+  examples: |
+    - how many deaths in [Telangana](state) due to corona on monday?
+    - how many deaths in [delhi](state) due to corona on 12th oct 2021?
+    - on oct 2nd 2021 number of deaths [Telangana](state) because of corona?
+    - how many people died in [delhi](state) on 12th july ?
+    - death count [Telangana](state) on 23-7-2021
+    - deaths in [delhi](state) on 30th october
+    - how many dieaths were recorded on monday last week in [delhi](state)?
+    - how many covid deaths on tue in [Karnataka](state)?
+    - on wed how many corona deaths in [telangana](state)
+    - 12th oct  corona deaths in [delhi](state)?
+
+
+- intent: nlu_fallback
+  examples: |
+    - how many covid deaths in india on 6th aug 2021?
+- synonym: corona
+  examples: |
+    - covid-19
+    - covid
