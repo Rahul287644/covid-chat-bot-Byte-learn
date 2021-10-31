@@ -10,9 +10,12 @@ Covid -19 chatbot that has ability to provide information about covid -19
 - Covid symptoms
 - What time is it
 - Cases and deaths in india 
-- Cases and deaths in india on a specific date
-- Cases and deaths in a state
-- Cases and deaths in a state on a specific date
+- Cases in india on a specific date
+- deaths in india on a specific date
+- Cases  in a state in india
+- deaths in a state in inida
+- Cases in a state on a specific date
+- deaths in a state on a specific date
 
 
 ### How to run the project
