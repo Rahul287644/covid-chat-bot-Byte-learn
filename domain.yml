@@ -8,7 +8,6 @@ intents:
 - greet
 - corona_cases_state
 - affirm
-- nlu_fallback
 - corona_cases_india_time
 - corona_cases_state_time
 - corona_deaths_state_time
