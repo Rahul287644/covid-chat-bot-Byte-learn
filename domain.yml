@@ -1,0 +1,87 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ask_time
+- corona_deaths_india_time
+- greet
+- corona_cases_state
+- affirm
+- nlu_fallback
+- corona_cases_india_time
+- corona_cases_state_time
+- corona_deaths_state_time
+- goodbye
+- deny
+- corona_info
+- corona_spread
+- corona_symptoms
+- corona_vaccine
+- corona_prevention
+- corona_stats_india
+- corona_deaths_india
+- corona_cases_india
+- corona_deaths_state
+entities:
+- state
+- time
+- type
+slots:
+  state:
+    type: unfeaturized
+    influence_conversation: false
+  type:
+    type: unfeaturized
+    influence_conversation: false
+  time:
+    type: any
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! I am a Bot i will try to give any sorts of info about covid-19 or corona virus
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_corona_info:
+  - text: Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic.
+  utter_corona_spread:
+  - text: The disease is mainly transmitted via the respiratory route when people inhale droplets and small airborne particles (that form an aerosol) that infected people breath out as they breathe, talk, cough, sneeze, or sing. Infected people are more likely to transmit COVID-19 when they are physically close. However, infection can occur over longer distances, particularly indoors.
+  utter_corona_symptoms:
+  - text: |-
+      COVID-19 symptoms include:
+      Cough
+      Fever or chills
+      Shortness of breath or 
+      difficulty breathing
+      Muscle or body aches
+      Sore throat
+      New loss of taste or smell
+      Diarrhea
+      Headache
+      New fatigue
+      Nausea or vomiting
+      Congestion or runny noseIn confirmed cases of illness in humans, common symptoms have been acute, serious respiratory illness with fever, cough, shortness of breath, and breathing difficulties. Based on current clinical experience, the infection generally presents as pneumonia. It has caused kidney failure and death in some cases. It is important to note that the current understanding of the illness caused by this infection is based on a limited number of cases and may change as more information becomes available.
+  utter_corona_vaccine:
+  - text: 6.94 billion doses of COVID‑19 vaccines have been administered worldwide based on official reports from national public health agencies.AstraZeneca anticipates producing 3 billion doses in 2021, Pfizer–BioNTech 1.3 billion doses, and Sputnik V, Sinopharm, Sinovac, and Janssen 1 billion doses each.
+  utter_corona_prevention:
+  - text: Preventive measures to reduce the chances of infection include getting vaccinated, staying at home, wearing a mask in public, avoiding crowded places, keeping distance from others, ventilating indoor spaces, managing potential exposure durations,[146] washing hands with soap and water often and for at least twenty seconds, practising good respiratory hygiene, and avoiding touching the eyes, nose, or mouth with unwashed hands.
+  utter_time:
+  - text: it is {time}.
+actions:
+- action_cases_india
+- action_cases_india_time
+- action_cases_state
+- action_deaths_india
+- action_deaths_india_time
+- action_deaths_state
+- utter_greet
+- utter_time
+- action_cases_state_time
+- action_deaths_state_time
