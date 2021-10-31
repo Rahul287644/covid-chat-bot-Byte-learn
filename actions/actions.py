@@ -182,7 +182,7 @@ class ActionStatedeathstime(Action):
             if data["day"]==time.partition("T")[0]:
                 for location in data["regional"]:
                     if location["loc"]==state.title():
-                        message = " number of active cases in " + location["loc"].title() + " is " + str(location["deaths"])
+                        message = " number of active deaths in " + location["loc"].title() + " is " + str(location["deaths"])
 
 
         dispatcher.utter_message(message)
