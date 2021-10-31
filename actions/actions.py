@@ -216,4 +216,4 @@ class ActionStatecasestime(Action):
 
         dispatcher.utter_message(message)
 
-        return []
+        return [ ]
