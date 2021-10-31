@@ -190,3 +190,23 @@ nlu:
     - china virus
     - wuhan virus
 
+- lookup: state
+  examples: |
+    - Andhra Pradesh
+    - Arunachal Pradesh
+    - Assam
+    - Bihar
+    - Goa
+    - Gujarat
+    - Karnataka
+    - Madhya Pradesh
+    - Maharashtra
+    - Manipur
+    - Punjab
+    - Rajasthan
+    - Tamil Nadu
+    - Telangana
+    - Uttar Pradesh
+    - West Bengal
+
+
